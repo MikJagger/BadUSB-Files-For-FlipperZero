@@ -17,7 +17,7 @@ $body = @{
     "autorename" = $true
 } | ConvertTo-Json
 
-$files = Get-ChildItem -Path $localFolderPath -Include "*.docx","*.txt","*.pdf","*.jpg","*.png" -Recurse
+$files = Get-ChildItem -Path $localFolderPath -Include "*.txt" -Recurse
 
 foreach ($file in $files) {
     $relativePath = $file.FullName.Replace($localFolderPath, '').TrimStart('\')
